@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image {
+  border-radius: 100px;
+  width: 500px;
+}
+.image:hover {
+  cursor: pointer;
+}
+
+
+.form_ctn {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

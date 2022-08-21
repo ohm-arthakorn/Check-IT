@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+    height: 10vh;
+    border-radius: 1vh;
+    background-color: #6E85B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ? Create Logo & Animation. */
+.logo {
+    width: 9vh;
+    border-radius: 0.5rem;
+}
+
+.logo:hover {
+    width: 8.5vh;
+    transition: all .5s;
+}
+
+/* ? Create Quote for Website. */
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.text > h4 {
+    margin-bottom: 0;
+}
+
+.text > h5 {
+    margin-top: 0;
+}
+
+.button,
+.button_2 {
+    margin-left: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.button_ctn {
+    margin-left: 3rem;
+}
+.button:hover,
+.button_2:hover {
+    background-color: #B2C8DF;
+    color: black;
+}
+
+.button:focus,
+.button_2:focus {
+    border: solid 2px white;
+}
+

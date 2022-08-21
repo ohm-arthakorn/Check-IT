@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.sub_container {
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    grid-gap: 1rem;
+    align-items: flex-start;
+}
+
+.item_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    width: 500px;
+}
