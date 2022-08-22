@@ -48,6 +48,6 @@ export default function Navbar() {
           </span>
         </Link>
       </div>
-    </div>
+      </div>
   );
 }
