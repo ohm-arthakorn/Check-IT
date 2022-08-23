@@ -1,24 +1,34 @@
-import React from "react";
-import { useState } from "react";
-export default function Test() {
-  // Create State
-  const [noteContent, setNoteContent] = useState("");
+import { useState } from "react"
+import axios from 'axios'
+
+export default function test(props) {
+
+  const [res, setRes] = useState(null)
+
+  function callAPI() {
+    axios({
+      'method': 'POST',
+      'url':'/api/graphql',
+      'data': {
+        'query': `
+          query Query{
+            getStudents {
+              name
+            }
+          }
+        `
+      }
+    }).then((res) => {
+      setRes(JSON.stringify(res.data))
+    }).catch((e) => console.log(e))
+  }
 
   return (
-    <div className="ctn">
-      <h3>{noteContent}</h3>
-      <p>
-        <input
-          type="text"
-          placeholder="Please input some text "
-          value={noteContent}
-          onChange={(event) => {
-            setNoteContent(event.target.value);
-          }}
-        />
-      </p>
-      <button type="submit">Submit</button>
-      <p></p>
+    <div>
+      <p>Your Home page</p>
+      <button onClick={()=>callAPI()}>ClickMe</button>
+      <p>{res}</p>
+      
     </div>
-  );
+  )
 }

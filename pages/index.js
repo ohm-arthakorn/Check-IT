@@ -25,8 +25,8 @@ export default function Home() {
           <div>
             <p className={styles.font}>
               Check-IT is a website for recording attendance of students of
-              Pathumganga School. This website was created by students of
-              Pathumganga School to solve environmental problems. due to Using a
+              Patumkongka School. This website was created by students of
+              Patumkongka School to solve environmental problems. due to Using a
               large amount of paper from the use of paper for check names.
             </p>
           </div>
