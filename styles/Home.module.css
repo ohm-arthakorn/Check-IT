@@ -1,6 +1,13 @@
 .font {
   font-family: 'Bai Jamjuree', sans-serif;
+  font-size: x-large;
 }
+
+.font_title {
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
 
 .container {
   display: flex;
@@ -45,4 +52,12 @@
   background-color: #F8F9D7;
   border-radius: 1rem;
   padding: 10px;
+}
+
+.ctn_content {
+  display: flex;
+}
+
+.img_content {
+  width: 500px;
 }

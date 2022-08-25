@@ -17,19 +17,25 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.intro_ctn}>
           <div className={styles.title}>
-            <h1 className={styles.font}>Introduction</h1>
+            <h1 className={styles.font_title}>Introduction</h1>
           </div>
           <div className={styles.subtitle}>
-            <h2 className={styles.font}>What is Check-IT ?</h2>
+            <h2 className={styles.font_title}>What is Check-IT ?</h2>
           </div>
-          <div>
+          <div className={styles.ctn_content}>
+            <span className={styles.content}>
             <p className={styles.font}>
               Check-IT is a website for recording attendance of students of
               Patumkongka School. This website was created by students of
               Patumkongka School to solve environmental problems. due to Using a
               large amount of paper from the use of paper for check names.
             </p>
+            </span>
+            <span>
+            <img src="/Img/LG01.png" alt="logo" className={styles.img_content}/>
+            </span>
           </div>
+          
         </div>
       </div>
     </div>
