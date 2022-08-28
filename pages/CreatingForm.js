@@ -1,7 +1,15 @@
+import Head from "next/head"
+
 export default function CreatingForm() {
+   
     return (
         <div className="flex justify-center">
-            <form className="flex justify-center flex-col " action="">
+            <Head>
+                <title>
+                    Creating Class
+                </title>
+            </Head>
+            <form className="flex justify-center flex-col">
                 <label>
                     Name
                 </label>

@@ -12,7 +12,9 @@ export default function Create_class() {
       {/* ส่วนของปุ่มที่เมื่อกดแล้วจะเด้งไปที่หน้า Form */}
       <div className="flex justify-center py-12">
         <Link href="/CreatingForm">
-          <button className="px-12 py-4 border rounded border-solid border-blue-600 bg-blue-200 hover:bg-blue-400 duration-300 hover:text-white">Create Class</button>
+          <button className="px-12 py-4 border rounded border-solid border-blue-600 bg-blue-200 hover:bg-blue-400 duration-300 hover:text-white">
+            Create Class
+          </button>
         </Link>
       </div>
     </div>
