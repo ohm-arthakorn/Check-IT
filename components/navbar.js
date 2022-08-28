@@ -19,13 +19,13 @@ export default function Navbar() {
           {/* Button Create Class */}
           <span  className="flex justify-center">
             <Link href="/create_class">
-              <button className="text-white">Create Class</button>
+              <button className="font-bold text-white rounded-lg bg-blue-300 px-2 py-4 hover:bg-blue-600 duration-300">Create Class</button>
             </Link>
           </span>
           {/* Button Checking Result */}
           <span className="flex justify-center">
             <Link href="/checking_result">
-              <button className="text-white">Checking Result</button>
+              <button className="font-bold text-white rounded-lg bg-blue-300 px-2 py-4 hover:bg-blue-600 duration-300">Checking Result</button>
             </Link>
           </span>
         </div>
