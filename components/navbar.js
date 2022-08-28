@@ -11,7 +11,7 @@ export default function Navbar() {
           {/* Logo in Container Navbar */}
           <span className="flex justify-center align-middle">
             <Link href="/" className="">
-              <img src="/IMG/LG01.png" alt="Logo" className="w-24 rounded p-2" />
+              <img src="/IMG/LG01.png" alt="Logo" className="w-24 rounded" />
             </Link>
           </span>
         </div>
