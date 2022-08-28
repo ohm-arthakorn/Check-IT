@@ -1,21 +1,26 @@
 import Head from "next/head";
+
 export default function Home() {
   return (
     <div>
-      {/* Import font here! */}
-      <Head>
-        <title>
-          Check-IT
-        </title>
-      </Head>
-      {/* Introduction Websites */}
-    <div className="  ">
-      <h1 className="font-bold">
-        Introduction websites
-      </h1>
-      <p>
-      </p>
-    </div>
+      <div>
+        {/* Head to change title */}
+        <Head>
+          <title>Check-IT</title>
+        </Head>
+        {/* Introduction Part */}
+        <div className="flex justify-center">
+          <div>
+            <h1>Check-IT</h1>
+          </div>
+          {/* Sub-title Part */}
+          <div className="grid grid-cols-2">
+            <div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
