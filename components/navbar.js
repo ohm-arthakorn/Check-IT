@@ -6,7 +6,7 @@ export default function Navbar() {
   
   return (
     <div>
-      <div className="flex flex-1">
+      <div className="flex flex-1 bg-blue-300">
         {/* Logo Part */}
         <div className="flex">
             <Link href='/'>
@@ -19,9 +19,9 @@ export default function Navbar() {
 
           {/* Class Button */}
           <span>
-            <Link href='/class'>
-              <button>
-                Class
+            <Link href='/classApp'>
+              <button className="font-serif">
+                Class M.5/1
               </button>
             </Link>
           </span>
@@ -29,7 +29,7 @@ export default function Navbar() {
           {/* Creating Result */}
           <span>
             <Link href='/CheckingResults'>
-              <button>
+              <button className="font-serif">
                 Checking Result
               </button>
             </Link>
