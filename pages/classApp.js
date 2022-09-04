@@ -1,43 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import Head from "next/head"
+import { data } from "autoprefixer";
 
-export default function ClassApp() {
-  const [member, setMember] = useState({
-    name: "",
-    lname: "",
-  });
-  const handleChange = (event) => {
-    setMember({ ...member, [event.target.name]: event.target.value });
-  };
-  const handleSubmit = (event) => {
-    // Prevents the submit button from refreshing the page
-    event.preventDefault();
-    console.log(member)
-  }
-
+export default function classApp() {
   return (
     <div>
-      <div className="flex flex-col space-y-4 my-4 items-center">
-        <div>Input your class students</div>
-        <form className="flex flex-col" onSubmit={handleSubmit}>
-          <label>Name : </label>
-          <input
-            type="text"
-            name="fname"
-            className="border border-black"
-            placeholder="Name"
-          />
-          <label>Lastname : </label>
-          <input
-            type="text"
-            name="lname"
-            className="border border-black"
-            placeholder="Lastname"
-          />
-          <button type="submit" className="border border-black my-2">
-            submit
-          </button>
-        </form>
+      <Head>
+        <title>
+          รายชื่อนักเรียนชั้นม.5/1
+        </title>
+      </Head>
+      <div className="flex flex-col items-center my-4">
+      <Link href="/create_form">
+      <button className="border border-black p-2 rounded font-serif hover:p-4 hover:bg-blue-200 duration-500">เพิ่มรายชื่อนักเรียนที่นี่ !!</button>
+      </Link>
+      </div>
+      <div>
+        
       </div>
     </div>
-  );
+  )
 }
