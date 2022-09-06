@@ -1,28 +1,5 @@
 import Head from 'next/head';
 export default function Contact() {
-  // const submitContact = async (event) => {
-  //   event.preventDefault();
-  //   const name = event.target.name.value;
-  //   const res = await fetch(`https://api.agify.io/?name=${name}`);
-  //   const result = await res.json();
-  //   alert(`Hi ${name} your age is most likely: ${result.age}`);
-  // };
-
-  const submitContact = async (event) => {
-    event.preventDefault();
-    const name = event.target.name.value;
-    const res = await fetch('/api/contact', {
-      body: JSON.stringify({
-        name: name,
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      method: 'POST',
-    });
-    const result = await res.json();
-    alert(`Is this your full name: ${result.name}`);
-  };
 
   return (
     <div className='flex items-center justify-center min-h-screen'>
